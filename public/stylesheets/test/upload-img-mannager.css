@@ -1,0 +1,21 @@
+.container-upload {
+    position: relative;
+}
+
+.upload {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.lh-2 {
+    line-height: 2;
+}
+
+.padding-4rem {
+    padding: 0.4rem;
+}

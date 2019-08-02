@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/test/upload-img-mannager.css' />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item container-upload">
+                        <input type="file" id="file" name="myfile" class="upload" accept="image/x-png, image/jpg, image/jpeg, image/gif"/>
+                        <button type="button" class="btn btn-info">上传图片</button>
+                    </li>
+                </ul>
+
+            </form>
+        </div>
+    </nav>
+    <div class="box">
+        <!--<div class="row">-->
+            <!--<div class="col-md-8">-->
+                <!--<div class="lh-2 padding-4rem">-->
+                    <!--<progress id="progressBar" value="0" max="100" style="width: 90%;"></progress>-->
+                    <!--<span id="percentage"></span><span id="time"></span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4">-->
+                <!--<input type="button" class="btn btn-warning" onclick="cancleUploadFile()" value="取消" />-->
+            <!--</div>-->
+        <!--</div>-->
+        <table class="table table-hover" id="fileList">
+            <thead>
+                <tr>
+                    <th class="active">序号</th>
+                    <th class="success">文件名称</th>
+                    <th class="warning">文件大小</th>
+                    <th class="danger">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="active">active</td>
+                    <td class="success">success</td>
+                    <td class="warning">warning</td>
+                    <td class="danger">danger</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <script src="/javascripts/jquery.min.3.4.1.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/javascripts/base.js"></script>
+    <script src="/javascripts/test/upload-img-mannager.js"></script>
+</body>
+</html>
